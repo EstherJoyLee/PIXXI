@@ -28,14 +28,16 @@ const Product = () => {
   }, [data, dispatch]);
 
   return (
-    <section className={styles.product}>
-      <aside className={styles.filter}>
-        {isLoading ? null : <ProductFilter />}
-      </aside>
-      <div className={styles.content}>
-        {isLoading ? <Loader basic /> : <ProductList />}
-      </div>
-    </section>
+    <>
+      <section className={styles.product}>
+        <aside className={styles.filter}>
+          {isLoading ? null : <ProductFilter />}
+        </aside>
+        <div className={styles.content}>
+          {isLoading ? <Loader basic /> : <ProductList />}
+        </div>
+      </section>
+    </>
   );
 };
 

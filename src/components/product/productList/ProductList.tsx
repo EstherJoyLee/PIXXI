@@ -99,7 +99,7 @@ const ProductList = () => {
             <p>상품이 없습니다.</p>
           ) : (
             <>
-              {currentProducts.map((product) => {
+              {currentProducts.map((product: IProduct) => {
                 return (
                   <div key={product.id}>
                     <ProductItem {...product} />
