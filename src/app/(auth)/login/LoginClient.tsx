@@ -15,10 +15,10 @@ import { toast } from "react-toastify";
 import AutoSignInCheckbox from "../../../components/autoSignInCheckbox/AutoSignInCheckbox";
 import Button from "../../../components/button/Button";
 import Divider from "../../../components/divider/Divider";
-import Input from "../../../components/input/Input";
 import styles from "./Auth.module.scss";
 import { auth } from "../../../firebase/firebase";
 import Loader from "../../../components/loader/Loader";
+import Input from "../../../components/input/Input";
 
 const LoginClient = () => {
   const [email, setEmail] = useState("");
