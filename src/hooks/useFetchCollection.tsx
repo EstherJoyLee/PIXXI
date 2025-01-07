@@ -9,6 +9,7 @@ import {
 } from "firebase/firestore";
 import React, { useCallback, useEffect, useState } from "react";
 import { toast } from "react-toastify";
+import { getErrorMessage } from "../utils/getErrorMessage";
 
 const useFetchCollection = (collectionName: string) => {
   const [data, setData] = useState<DocumentData[]>([]);

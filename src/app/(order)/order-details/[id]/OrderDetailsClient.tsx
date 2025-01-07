@@ -8,7 +8,7 @@ import Loader from "@/components/loader/Loader";
 import Image from "next/image";
 import { priceFormat } from "@/utils/priceFormat";
 import Button from "@/components/button/Button";
-import { ICartItem } from "../../../../../src_tsx/types";
+import { TCartItem } from "../../../../types";
 
 const OrderDetailsClient = () => {
   const { id } = useParams();
@@ -51,7 +51,7 @@ const OrderDetailsClient = () => {
                 </tr>
               </thead>
               <tbody>
-                {order.cartItems.map((cartItem: ICartItem, index: number) => {
+                {order.cartItems.map((cartItem: TCartItem, index: number) => {
                   const { id, name, price, imageURL, cartQuantity } = cartItem;
                   return (
                     <tr key={id}>
